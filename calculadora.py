@@ -10,7 +10,7 @@ class Calculadora:
         return a * b
     
     def divide(self, a,b):
-        if b == 0:
+        if b = 0:
             raise ValueError("Não é permitida divisão por zero")
         return a / b
     
