@@ -1,3 +1,5 @@
+import math
+
 class Calculadora:
     
     def soma(self, a, b):
@@ -14,3 +16,5 @@ class Calculadora:
             raise ValueError("Não é permitida divisão por zero")
         return a / b
     
+    def potencia(self, a, b):
+        return a ** b

@@ -71,3 +71,15 @@ def test_divisao_por_zero():
 
     with pytest.raises(ValueError, match=r"Não é permitida divisão por zero"):
         calc.divide(2,0)
+
+def test_potencia():
+
+    # Arrange
+    calc = Calculadora()
+    # Fim Arrange
+
+    valor_positivo = calc.potencia(2, 3)
+    assert valor_positivo == 8
+
+    valor_zero = calc.potencia(5, 0)
+    assert valor_zero == 1
