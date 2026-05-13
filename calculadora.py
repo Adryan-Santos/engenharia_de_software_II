@@ -18,3 +18,8 @@ class Calculadora:
     
     def potencia(self, a, b):
         return a ** b
+    
+    def raiz_quadrada(self, a):
+        if a < 0:
+            raise ValueError("Não é possível calcular raiz de número negativo")
+        return math.sqrt(a)
