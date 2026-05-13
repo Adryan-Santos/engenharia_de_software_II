@@ -83,3 +83,15 @@ def test_potencia():
 
     valor_zero = calc.potencia(5, 0)
     assert valor_zero == 1
+
+def test_raiz_quadrada():
+
+    # Arrange
+    calc = Calculadora()
+    # Fim Arrange
+
+    valor_positivo = calc.raiz_quadrada(25)
+    assert valor_positivo == 5
+
+    valor_zero = calc.raiz_quadrada(0)
+    assert valor_zero == 0
